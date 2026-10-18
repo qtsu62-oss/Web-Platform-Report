@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لغة CSS وتصميم صفحات الويب | أحمد صابر عبد الفتاح</title>
+<meta name="description" content="تقرير بحثي مصغر عن لغة CSS وتصميم صفحات الويب - معهد الدلتا العالي">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1d6fb8;--dark:#0b2e57;--line:#d5deea;--soft:#f3f7fb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Cairo','Segoe UI',Tahoma,Arial,sans-serif;font-size:18px;line-height:2;color:#1f2937;background:#eef3f8}
+.hero{background:#fff;color:var(--dark);text-align:center;padding:34px 16px 36px;border-bottom:1px solid var(--line)}
+.hero img{width:120px;height:auto;border-radius:10px;border:1px solid var(--line);background:#fff}
+.hero .gov{font-size:15px;color:#555;margin-top:10px}
+.hero .inst{font-size:19px;font-weight:700;margin-bottom:4px;color:#111827}
+.hero h1{font-size:34px;line-height:1.6;margin:16px 0 4px;border:0;color:var(--dark);padding:0}
+.hero .sub{font-size:16px;color:#555}
+.meta{display:inline-block;margin-top:18px;background:var(--soft);border:1px solid var(--line);color:#1f2937;border-radius:10px;padding:8px 24px;font-size:16px;line-height:2}
+nav{background:#fff;border-bottom:1px solid var(--line);text-align:center;padding:10px;position:sticky;top:0;z-index:5}
+nav a{display:inline-block;margin:0 10px;color:var(--blue);text-decoration:none;font-weight:600;font-size:16px}
+main{max-width:860px;margin:22px auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 34px 40px}
+h1{font-size:28px;color:var(--dark);border-bottom:3px solid var(--blue);padding-bottom:6px;margin-top:34px}
+h2{font-size:21px;color:var(--blue);margin-top:28px;margin-bottom:0}
+p{margin:6px 0 12px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:16px;line-height:1.8}
+table.t th{background:var(--blue);color:#fff;padding:9px;border:1px solid var(--blue)}
+table.t td{padding:9px;border:1px solid var(--line);vertical-align:top}
+table.t tr:nth-child(even) td{background:var(--soft)}
+.code{direction:ltr;text-align:left;font-family:Consolas,'Courier New',monospace;background:#0f172a;color:#e2e8f0;border-radius:8px;padding:10px 16px;font-size:15px;line-height:1.8;overflow-x:auto}
+.note{background:#fff8e6;border-right:4px solid #f0b429;border-radius:6px;padding:8px 16px;margin:14px 0}
+.en{direction:ltr;unicode-bidi:embed}
+ol li,ul li{margin-bottom:4px}
+.ref p{direction:ltr;text-align:left;font-size:14px;line-height:1.7;word-break:break-all;margin:6px 0}
+.ref a{color:var(--blue)}
+.dl{display:inline-block;margin-top:10px;padding:9px 26px;background:var(--blue);color:#fff;text-decoration:none;border-radius:8px;font-weight:600;font-size:16px}
+footer{text-align:center;color:#64748b;font-size:14px;padding:6px 0 30px}
+@media(max-width:600px){body{font-size:16px}.hero h1{font-size:25px}main{padding:4px 16px 30px;margin:12px 8px}table{font-size:14px}nav a{margin:0 6px;font-size:14px}}
+</style></head><body>
+<header class="hero">
+  <img src="logo.jpg" alt="شعار معهد الدلتا">
+  <div class="gov">وزارة التعليم العالي</div>
+  <div class="inst">معهد الدلتا العالي لنظم المعلومات الإدارية والمحاسبية</div>
+  <h1>لغة CSS وتصميم صفحات الويب</h1>
+  <div class="sub">تقرير بحثي مصغر &nbsp;|&nbsp; مقرر: تطبيقات الإنترنت والمنصات الإلكترونية</div>
+  <div class="meta">إعداد الطالب: أحمد صابر عبد الفتاح<br>الرقم المرجعي: 2501215 &nbsp;|&nbsp; أكتوبر 2026</div>
+</header>
+<nav><a href="#intro">المقدمة</a><a href="#main">عرض الموضوع</a><a href="#refs">المراجع</a><a href="Ahmed_Saber_Abdelfattah_2501215_Report.pdf">تحميل PDF</a></nav>
+<main>
+
+
+
+
+<h1 id="intro">المقدمة</h1>
+<p>تُبنى صفحات الويب من ثلاث لغات أساسية: لغة HTML التي تحدد محتوى الصفحة وهيكلها من عناوين وفقرات وصور، ولغة CSS التي تتحكم في شكلها، ولغة JavaScript التي تضيف التفاعل. وبدون CSS تظهر الصفحة بنص أسود على خلفية بيضاء وبخط افتراضي، وكأنها مستند قديم.</p>
+<p>تُعد لغة <b>CSS (Cascading Style Sheets)</b> أو «أوراق الأنماط المتتالية» الأداة التي تحوّل هذه الصفحة البسيطة إلى تصميم جذاب، فهي تغيّر الألوان والخطوط والمسافات وترتيب العناصر. ويناقش هذا التقرير فكرة CSS وطريقة ربطها بالصفحة وأهم خصائصها، مع أمثلة مبسطة، وتكمن أهميته في أن شكل الموقع هو أول ما يراه المستخدم ويحكم به على جودة المنصة.</p>
+
+<h1 id="main">عرض الموضوع</h1>
+
+<h2>1. ما هي CSS؟</h2>
+<p>CSS لغة تنسيق تُستخدم لتحديد كيف تُعرض عناصر HTML على الشاشة. فهي لا تغيّر محتوى الصفحة، وإنما تغيّر مظهره فقط. وفكرتها الأساسية هي فصل «المحتوى» عن «الشكل»، فيمكن تغيير تصميم موقع كامل بتعديل ملف واحد دون لمس صفحات HTML.</p>
+
+<h2>2. كيف نربط CSS بصفحة HTML؟</h2>
+<table class="t">
+<tr><th>الطريقة</th><th>الوصف</th><th>متى تُستخدم؟</th></tr>
+<tr><td>داخل العنصر (Inline)</td><td>كتابة التنسيق في خاصية <span class="en">style</span> داخل الوسم نفسه</td><td>تعديل سريع على عنصر واحد، ولا يُنصح بها كثيراً</td></tr>
+<tr><td>داخل الصفحة (Internal)</td><td>وضع التنسيقات داخل وسم <span class="en">&lt;style&gt;</span> في الصفحة</td><td>الصفحات الصغيرة</td></tr>
+<tr><td>ملف خارجي (External)</td><td>ملف مستقل بامتداد <span class="en">.css</span> يُربط بالصفحة</td><td>المواقع والمنصات، وهي الأفضل</td></tr>
+</table>
+<p>مثال على الربط بملف خارجي، ويوضع هذا السطر داخل قسم رأس الصفحة (head):</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="6" bordercolor="#cbd5e1"><tr><td bgcolor="#f1f5f9" dir="ltr" align="left" style="padding:8px 12px;border:1px solid #d5deea"><pre style="font-family:'DejaVu Sans Mono',monospace;font-size:10pt;line-height:1.25;margin:0">&lt;link rel="stylesheet" href="style.css"&gt;</pre></td></tr></table>
+
+<h2>3. شكل قاعدة CSS</h2>
+<p>تتكون القاعدة من <b>محدد (Selector)</b> يختار العنصر المراد تنسيقه، ثم أقواس تحوي أزواجاً من <b>الخاصية (Property)</b> و<b>القيمة (Value)</b>:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="6" bordercolor="#cbd5e1"><tr><td bgcolor="#f1f5f9" dir="ltr" align="left" style="padding:8px 12px;border:1px solid #d5deea"><pre style="font-family:'DejaVu Sans Mono',monospace;font-size:10pt;line-height:1.25;margin:0">h1 {
+  color: navy;
+  font-size: 32px;
+}</pre></td></tr></table>
+<p>تعني هذه القاعدة أن كل عنوان رئيسي يظهر باللون الكحلي وبحجم خط 32 بكسل، وهو ما يمثله المحدد h1. وكلمة «المتتالية» (Cascading) تعني أنه عند تعارض قاعدتين على العنصر نفسه، يحسم المتصفح الأمر حسب ترتيب القواعد ودرجة تحديدها للعنصر.</p>
+
+<h2>4. تغيير الألوان والخطوط</h2>
+<table class="t">
+<tr><th>الخاصية</th><th>وظيفتها</th><th>مثال</th></tr>
+<tr><td><span class="en">color</span></td><td>لون النص</td><td><span class="en">color: #1d6fb8;</span></td></tr>
+<tr><td><span class="en">background-color</span></td><td>لون الخلفية</td><td><span class="en">background-color: #f3f7fb;</span></td></tr>
+<tr><td><span class="en">font-family</span></td><td>نوع الخط</td><td><span class="en">font-family: Arial, sans-serif;</span></td></tr>
+<tr><td><span class="en">font-size</span></td><td>حجم الخط</td><td><span class="en">font-size: 18px;</span></td></tr>
+<tr><td><span class="en">font-weight</span></td><td>سمك الخط (عادي أو عريض)</td><td><span class="en">font-weight: bold;</span></td></tr>
+<tr><td><span class="en">text-align</span></td><td>محاذاة النص</td><td><span class="en">text-align: center;</span></td></tr>
+</table>
+<p>ويمكن كتابة اللون بثلاث طرق: بالاسم، أو بنظام الست عشري، أو بنظام RGB، كما في الأمثلة التالية على الترتيب:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="6" bordercolor="#cbd5e1"><tr><td bgcolor="#f1f5f9" dir="ltr" align="left" style="padding:8px 12px;border:1px solid #d5deea"><pre style="font-family:'DejaVu Sans Mono',monospace;font-size:10pt;line-height:1.25;margin:0">color: red;
+color: #1d6fb8;
+color: rgb(29, 111, 184);</pre></td></tr></table>
+
+<h2>5. نموذج الصندوق (Box Model)</h2>
+<p>يتعامل المتصفح مع كل عنصر في الصفحة على أنه صندوق مستطيل له أربع طبقات من الداخل إلى الخارج: المحتوى (Content)، ثم الحشو الداخلي (Padding)، ثم الإطار (Border)، ثم الهامش الخارجي (Margin). وبفهم هذه الطبقات نتحكم في المسافات بين العناصر وحجمها:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="6" bordercolor="#cbd5e1"><tr><td bgcolor="#f1f5f9" dir="ltr" align="left" style="padding:8px 12px;border:1px solid #d5deea"><pre style="font-family:'DejaVu Sans Mono',monospace;font-size:10pt;line-height:1.25;margin:0">.card {
+  padding: 16px;
+  border: 2px solid #1d6fb8;
+  margin: 20px;
+}</pre></td></tr></table>
+
+<h2>6. التخطيط والتصميم المتجاوب</h2>
+<p>تنظم CSS ترتيب العناصر على الصفحة بأدوات أهمها <b>Flexbox</b> لترتيب العناصر في صف أو عمود، و<b>Grid</b> لتقسيم الصفحة إلى شبكة من الأعمدة والصفوف. ولجعل الموقع يناسب شاشة الهاتف والحاسوب معاً نستخدم <b>الاستعلامات الوسائطية (Media Queries)</b>، التي تطبّق تنسيقاً مختلفاً حسب عرض الشاشة:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="6" bordercolor="#cbd5e1"><tr><td bgcolor="#f1f5f9" dir="ltr" align="left" style="padding:8px 12px;border:1px solid #d5deea"><pre style="font-family:'DejaVu Sans Mono',monospace;font-size:10pt;line-height:1.25;margin:0">@media (max-width: 600px) {
+  body { font-size: 16px; }
+}</pre></td></tr></table>
+
+<h2>7. مثال مبسط متكامل</h2>
+<p>ملف <span class="en">style.css</span> التالي يغيّر شكل صفحة بسيطة:</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="6" bordercolor="#cbd5e1"><tr><td bgcolor="#f1f5f9" dir="ltr" align="left" style="padding:8px 12px;border:1px solid #d5deea"><pre style="font-family:'DejaVu Sans Mono',monospace;font-size:10pt;line-height:1.25;margin:0">body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f7fb;
+}
+h1 {
+  color: #1d6fb8;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}</pre></td></tr></table>
+<p>بعد ربط هذا الملف بالصفحة يصبح الخط موحداً، والخلفية فاتحة، والعنوان أزرق في المنتصف، والفقرات أكبر وأسهل في القراءة، من غير أي تعديل على كود HTML.</p>
+
+<h2>8. الخلاصة</h2>
+<p>CSS هي لغة الشكل والتصميم في الويب، فهي التي تعطي الصفحات ألوانها وخطوطها وترتيبها، وتجعلها مناسبة لمختلف الشاشات. ومعرفة أساسياتها، مثل الربط والمحددات والخصائص ونموذج الصندوق، تمكّن مطور المنصات الإلكترونية من بناء واجهات واضحة وجذابة وسهلة الاستخدام.</p>
+
+<h1 id="refs">المراجع</h1>
+<div style="direction:ltr;text-align:left;">
+<p style="text-align:left;direction:ltr;">[1] MDN Web Docs, "CSS: Cascading Style Sheets" — <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a></p>
+<p style="text-align:left;direction:ltr;">[2] MDN Web Docs, "What is CSS?" — <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS">https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS</a></p>
+<p style="text-align:left;direction:ltr;">[3] MDN Web Docs, "CSS styling basics" — <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics">https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics</a></p>
+<p style="text-align:left;direction:ltr;">[4] W3C Wiki, "The CSS layout model – boxes, borders, margins, padding" — <a href="https://www.w3.org/wiki/The_CSS_layout_model_-_boxes_borders_margins_padding">https://www.w3.org/wiki/The_CSS_layout_model_-_boxes_borders_margins_padding</a></p>
+</div>
+
+<p style="text-align:center"><a class="dl" href="Ahmed_Saber_Abdelfattah_2501215_Report.pdf">تحميل التقرير PDF</a></p>
+</main>
+<footer>© 2026 أحمد صابر عبد الفتاح - معهد الدلتا العالي</footer>
+</body></html>
